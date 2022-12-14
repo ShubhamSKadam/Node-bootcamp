@@ -31,18 +31,18 @@ Applications with heavy server-side processing
 
 Below is an example of Synchronous code.
 
-<img src="Notes-Img/p1.png" alt="p1" style="zoom:60%;" />
+<img src="Notes-Img/p1.png" alt="p1" style="zoom:30%;" />
 
 It's your job to avoid this type of situation.
 
-<img src="Notes-Img\N1.png" alt="N1" style="zoom:50%;" />
+<img src="Notes-Img\N1.png" alt="N1" style="zoom:30%;" />
 
 #### Asynchronous Code :
 
 Below is an example of Asynchronous code.
 
-<img src="Notes-Img\p2.png" alt="p2" style="zoom:60%;" />
+<img src="Notes-Img\p2.png" alt="p2" style="zoom:30%;" />
 
 Non Blocking I/O model :
 
-<img src="Notes-Img\N2.png" alt="N2" style="zoom:50%;" />
+<img src="Notes-Img\N2.png" alt="N2" style="zoom:30%;" />
