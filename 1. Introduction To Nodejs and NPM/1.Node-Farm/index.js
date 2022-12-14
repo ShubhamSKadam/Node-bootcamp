@@ -1,7 +1,6 @@
 // fs is a module used for working over  file systems
 const fs = require("fs");
-//
-// // Blocking Synchronous way
+// Blocking Synchronous way
 // const textIn = fs.readFileSync("txt/input.txt", "utf-8");
 // console.log(textIn);
 
