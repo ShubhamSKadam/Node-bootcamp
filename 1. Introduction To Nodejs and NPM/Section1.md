@@ -40,7 +40,7 @@ console.log(textIn);
 
 It's your job to avoid this type of situation.
 
-<img src="Notes-Img\N1.png" alt="N1" style="zoom:30%;" />
+<img src="Notes-Img\N1.png" alt="N1" width="600" />
 
 #### Asynchronous Code :
 
@@ -71,4 +71,4 @@ The solution to this is to Using Promises or Async/Await
 
 Non Blocking I/O model :
 
-<img src="Notes-Img\N2.png" alt="N2" style="zoom:30%;" />
+<img src="Notes-Img\N2.png" alt="N2" width="600" />
