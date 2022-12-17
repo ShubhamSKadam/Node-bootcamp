@@ -1,6 +1,8 @@
 // fs is a module used for working over  file systems
 const fs = require("fs");
 const http = require("http");
+const path = require("path");
+const url = require("url");
 
 /// WORKING WITH FILES
 
@@ -33,7 +35,19 @@ const http = require("http");
 
 // CREATING A WEB SERVER
 const server = http.createServer((req, res) => {
-  res.end("Hello from the server !");
+  const pathName = req.url;
+
+  if (pathName === "/" || pathName === "/Overview") {
+    res.end("This is Overview");
+  } else if (pathName == "/Product") {
+    res.end("This is product");
+  } else {
+    res.writeHead(404, {
+      "Content-type": "text/html",
+      "my-own-header": "hello world",
+    });
+    res.end("<h1>Page not found</h1>");
+  }
 });
 
 server.listen(8000, "127.0.0.1", () => {
