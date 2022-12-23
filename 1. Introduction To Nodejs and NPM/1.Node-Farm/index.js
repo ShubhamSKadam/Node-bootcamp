@@ -1,18 +1,18 @@
 // fs is a module used for working over  file systems
 const fs = require("fs");
 // Blocking Synchronous way
-// const textIn = fs.readFileSync("txt/input.txt", "utf-8");
-// console.log(textIn);
+const textIn = fs.readFileSync("txt/input.txt", "utf-8");
+console.log(textIn);
 
-// const textOut = `This is what we know about Avocado: ${textIn}.\nCreated on ${Date.now()}`;
+const textOut = `This is what we know about Avocado: ${textIn}.\nCreated on ${Date.now()}`;
 
-// fs.writeFileSync("txt/newOutput.txt", textOut);
-// console.log("File written");
+fs.writeFileSync("txt/newOutput.txt", textOut);
+console.log("File written");
 
 // Non-blocking asynchronous way
-// fs.readFile("txt/start.txt", "utf-8", (err, data) => {
-//   console.log(data);
-// });
+fs.readFile("txt/start.txt", "utf-8", (err, data) => {
+  console.log(data);
+});
 
 fs.readFile("txt/start.txt", "utf-8", (err, data1) => {
   if (err) return console.log("ERR");
